@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百度一下，你就知道</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            position: relative;
+            text-align: center;
+        }
+
+
+        .header {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            
+        }
+        a.m,a.n {
+            list-style: none;
+            height: 60px;
+            font: 13px/23px Arial,sans-serif;
+            font-family: "PingFang SC",Arial,"Microsoft YaHei",sans-serif;
+            word-spacing: 46px;
+            color: #222;
+            display: inline-block;
+            margin-top: 19px;
+            margin-right: 20px;
+            text-align: center;
+            text-decoration:none;
+        }
+        a.o {
+            overflow: hidden;
+            font-family: inherit;
+            font-weight: 400;
+            text-align: center;
+            vertical-align: middle;
+            outline: 0;
+            border: 0;
+            border-radius: 6px;
+            padding: 0;
+            cursor: pointer;
+            height: 24px;
+            width: 48px;
+            line-height: 24px;
+            color: #fff !important;
+            background-color: #4e71f2;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 0px;
+            margin-left: 1px;
+            font-size: 13px;
+        }
+        #left {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 100;
+            height: 26px;
+            padding-left: 24px;
+        }
+        #right {
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 100;
+            height: 60px;
+            padding-right: 30px;
+        }
+        
+        a:hover {
+            color: #3388ff;
+        }
+        
+        #cc {
+            margin-top: 56px;
+        }
+        #bb {
+            height: 16px;
+            padding: 12px 16px;
+            font-size: 16px;
+            margin-left: -90px;
+            margin-top: 16px;
+            vertical-align: top;
+            outline: 0;
+            box-shadow: none;
+            border-radius: 10px 0 0 10px;
+            border: 2px solid #cacdd4;
+            background: #fff;
+            color: #222;
+            width: 480px !important;
+            padding-right: 48px !important
+        }
+        #ff {
+            cursor: pointer;
+            width: 108px;
+            height: 45px;
+            display: block;
+            margin-top: -45px;
+            right: -980px;
+            line-height: 25px;
+            background-color: #4e6ef2;
+            border-radius: 0 10px 10px 0;
+            font-size: 17px;
+            color: #fff;
+            box-shadow: none;
+            font-weight: 400;
+            border: none;
+            outline: 0;
+        }
+
+        .bdrb-title{
+          height: 24px;
+          width: 100%;
+          margin-bottom: 4px;
+}     
+        .bdrb{
+          font: 14px/24px Arial,sans-serif;
+          float: left;
+          margin-left: 440px;
+          height: 24px;
+}
+        .bdrb-hyh{
+          cursor: pointer;
+          font: 13px/23px Arial,sans-serif;
+          color:  #9195a3;
+          margin-top: 57px;
+}
+        .bdrb-hyh:hover {
+          color: #315efb;
+}        
+        .footer {
+            line-height: 40px;
+            width: 100%;
+            min-width: 1250px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            height: 40px;
+            overflow: hidden;
+            background-color: #fbfbfb;
+  
+        }
+        .lh {
+            font-size: 12px;
+            text-decoration: none;
+            color: #9195a3;
+            font-family: "PingFang SC",Arial,"Microsoft YaHei",sans-serif;
+            text-align: center;
+        }
+        #l {
+            float: left;
+            margin-left: 32px;
+        }
+        #dd {
+            float: right;
+            margin-right: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div id="left">
+            <a class="m" href="http://news.baidu.com">新闻</a>
+            <a class="m" href="https://www.hao123.com">hao123</a>
+            <a class="m" href="http://map.baidu.com">地图</a>
+            <a class="m" href="https://haokan.baidu.com/?sfrom=baidu-top">视频</a>
+            <a class="m" href="http://tieba.baidu.com">贴吧</a>
+            <a class="m" href="http://xueshu.baidu.com">学术</a>
+            <a class="m" href="http://www.baidu.com/more/">更多</a>
+        </div>
+        <div id="right">
+            <a class="n" href="#">设置</a>
+            <a class="o" href="#">登录</a>
+        </div>
+    </div>
+    <div class="section">
+        <div id="log">
+            <img id="cc" src="D:\nginx\nginx-1.18.0\nginx-1.18.0\html\照片\tupian.png" alt="" height="129" width="270">
+        </div>
+        <div id="aa">
+            <input id="bb" type="text">
+            <span id="hh">
+                <button id="ff">百度一下</button>
+            </span>
+        </div>
+    </div>
+    <div class="footer">
+        <div id="l">
+            <a href="#" class="lh">设为首页&ensp;&ensp;</a>
+            <a href="#" class="lh">关于百度&ensp;&ensp;</a>
+            <a href="#" class="lh">About  Baidu&ensp;&ensp;</a>
+            <a href="#" class="lh">百度营销&ensp;&ensp;</a>
+            <a href="#" class="lh">使用百度前必读&ensp;&ensp;</a>
+            <a href="#" class="lh">意见反馈&ensp;&ensp;</a>
+            <a href="#" class="lh">帮助中心&ensp;&ensp;</a>
+        </div>
+        <div id="dd">
+            <span class="lh">©2020&nbsp;Baidu&ensp;&ensp;</span>
+            <span class="lh">(京)-经营性-2017-0020&ensp;&ensp;</span>
+            <a href="#" class="lh">京公网安备11000002000001号&ensp;&ensp;</a>
+            <span class="lh">京ICP证030173号</span>  
+        </div>
+    </div>
+    <div class="bdrb-title">
+        <div class="bdrb">X度热榜</div>  <div class="bdrb-hyh">换一换</div>
+     </div>
+</body>
+</html>
